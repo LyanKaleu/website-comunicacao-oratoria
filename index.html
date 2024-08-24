@@ -16,6 +16,7 @@
         <div class="conteudo-principal">
             <div id="texto-principal">
                 <h1>Curso de Comunicação & Oratória - Nível 1:</h1>
+                <h2>Nível 2: Março de 2025</h2>
                 <p>Uma grande oportunidade acadêmica e profissional!</p>
                 <p>
                     <img src="assets/calendar.png" alt="ícone de calendário" class="icone-principal">
@@ -68,16 +69,17 @@
             <h2>Ementa</h2>
             <div class="info-box ementa">
                 <ul>
-                    <li>✔ Contratação Direta, alienações, concessões e permissões de bens públicos;</li>
-                    <li>✔ Os instrumentos auxiliares nas Contratações Públicas;</li>
-                    <li>✔ Aspectos introdutórios aos contratos administrativos;</li>
-                    <li>✔ Contratos e convênios Administrativos;</li>
-                    <li>✔ Gestão e Fiscalização de Contratos;</li>
-                    <li>✔ Licitações sustentáveis;</li>
-                    <li>✔ Infrações e Sanções nos processos de contratações públicas;</li>
-                    <li>✔ Mecanismos de fiscalização e controle dos contratos;</li>
-                    <li>✔ Portal Nacional de Compras Públicas (PNCP);</li>
-                    <li>✔ Inteligência Artificial e compras públicas;</li>
+                    <li>✔ Medo e timidez;</li>
+                    <li>✔ Preparação, estrutura e organização;</li>
+                    <li>✔ Diferentes trajes;</li>
+                    <li>✔ Postura e dicção;</li>
+                    <li>✔ Gestos;</li>
+                    <li>✔ Utilização de distintos microfones;</li>
+                    <li>✔ A tribuna;</li>
+                    <li>✔ Materiais e Equipamentos;</li>
+                    <li>✔ Falas de Improviso;</li>
+                    <li>✔ O discurso coerente, ético e empático;</li>
+                    <li>✔ Dicas de especialistas</li>
                 </ul>
             </div>
         </div>
@@ -125,17 +127,17 @@
     </section>
 
     <section id="ingressos">
-        <h2>Nosso curso conta com lotes promocionais e somente 60 vagas!</h2>
+        <h2>Nosso curso conta com lotes promocionais e somente 30 vagas (divididas em 2 turmas de 15)!</h2>
         <p>Garanta já a sua!</p>
         <div class="ingressos-container">
             <div class="ingressos-box estudante">
                 <h3>ESTUDANTES</h3>
-                <p>R&dollar; 130,00</p>
+                <p></p>
             </div>
 
             <div class="ingressos-box demais">
                 <h3>DEMAIS</h3>
-                <p>R&dollar; 260,00</p>
+                <p></p>
             </div>
         </div>
 
@@ -145,9 +147,9 @@
                 <thead>
                     <tr>
                         <th>Categoria</th>
-                        <th>1º Lote (Até 28/08)</th>
-                        <th>2º Lote (De 29/08 a 08/09)</th>
-                        <th>3º Lote (De 09/09 a 22/09)</th>
+                        <th>1º Lote (Até 08/09)</th>
+                        <th>2º Lote (De 09/09 a 22/09)</th>
+                        <th>3º Lote (De 23/09 a 03/10)</th>
                     </tr>
                 </thead>
 
@@ -173,10 +175,10 @@
             function atualizarValoresIngressos() {
                 const dataAtual = new Date();
                 
-                const lote1Fim = new Date('2024-08-28');
-                const lote2Inicio = new Date('2024-08-29');
-                const lote2Fim = new Date('2024-09-08');
-                const lote3Inicio = new Date('2024-09-09');
+                const lote1Fim = new Date('2024-09-08');
+                const lote2Inicio = new Date('2024-09-09');
+                const lote2Fim = new Date('2024-09-22');
+                const lote3Inicio = new Date('2024-09-23');
 
                 
                 const estudanteBox = document.querySelector('.ingressos-box.estudante p');
@@ -193,8 +195,7 @@
                     estudanteBox.textContent = 'R$ 160,00';
                     demaisBox.textContent = 'R$ 320,00';
                 }
-            }
-           
+            }     
             window.onload = atualizarValoresIngressos;
         </script>
 
@@ -259,7 +260,7 @@
             initCountdown()
         
             function initCountdown() {
-            var countdownDate = "Wed Sep 25 2024 14:00:00 GMT-0300 (Hora padrão de Brasília)"
+            var countdownDate = "Sat Oct 05 2024 08:00:00 GMT-0300 (Hora padrão de Brasília)"
             
             interval = setInterval(() => updateCounter(new Date(countdownDate)), 1000);
             }
