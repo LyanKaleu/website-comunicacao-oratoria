@@ -14,7 +14,7 @@
 #principal {
     display: flex;
     flex-direction: column;
-    background: url("assets/background-principal.jpg") no-repeat center center fixed;
+    background: url("assets/fundo-principal.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     padding: 20px;
@@ -84,7 +84,7 @@
 }
 
 #oferecimento p {
-    color: black;
+    color: #ffc550;
     margin-bottom: 5px;
 }
 
