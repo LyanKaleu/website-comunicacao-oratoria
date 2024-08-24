@@ -14,7 +14,7 @@
 #principal {
     display: flex;
     flex-direction: column;
-    background: url("assets/fundo-principal.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(70, 52, 34, 0.8), rgba(70, 52, 34,  0.8)), url("assets/fundo-principal.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     padding: 20px;
@@ -51,7 +51,7 @@
 }
 
 #destaque-data {
-    color: #fff;
+    color: #ffc550;
     font-size: 1.1em;
     font-weight: bold;
 }
