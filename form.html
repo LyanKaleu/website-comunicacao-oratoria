@@ -16,7 +16,7 @@
     <main>
         <div id="formulario">
             <h1>INSCRIÇÃO: CURSO DE COMUNICAÇÃO & ORATÓRIA</h1>
-            <p>Local: Auditório Carmen Sinotti - IFPI (Campus Teresina Central)</p>
+            <p>Local: A confirmar</p>
             <p>Data: 05, 19 e 26/10/2024</p>
 
             <form name="submit-to-google-sheet" id="inscricao-form" action="#" method="post" autocomplete="on">
@@ -41,10 +41,21 @@
                 <div class="campo">
                     <span class="material-symbols-outlined">list</span>
                     <select name="categoria" id="categoria" required>
+                        <option value="" disabled selected>Selecione a categoria</option>
                         <option value="estudante">Estudante</option>
                         <option value="demais">Demais</option>
                     </select>
                     <label for="categoria">Categoria</label>
+                </div>
+
+                <div class="campo">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <select name="modalidade" id="modalidade" required>
+                        <option value="" disabled selected>Selecione a modalidade</option>
+                        <option value="presencial">Semipresencial</option>
+                        <option value="online">Online</option>
+                    </select>
+                    <label for="modadlidade">Modalidade</label>
                 </div>
 
                 <input id="submitBtn" type="submit" value="Enviar">
@@ -140,7 +151,7 @@
             }, 5000);
         }
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwPh3cfayV2EPKjWkQTyj7vhzEuPzkzOcNnPUYhM1XNVtROYxwsglYfNjnLq8PuA93pkg/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDCVf886H2SVg8gb37_Xj0s1HM876zSudTs3TawlSPKUzVvQ0tvt4BuB_msLT1lWR_QQ/exec';
         const form = document.forms['submit-to-google-sheet']; // formulario no index
 
         form.addEventListener('submit', e =>
